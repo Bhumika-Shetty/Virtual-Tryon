@@ -1,0 +1,9 @@
+S_M.jpg tshirt.jpg
+L_M.jpg tshirt.jpg
+S_S.jpg tshirt.jpg
+M_M.jpg tshirt.jpg
+S_L.jpg tshirt.jpg
+M_S.jpg tshirt.jpg
+L_L.jpg tshirt.jpg
+M_L.jpg tshirt.jpg
+L_S.jpg tshirt.jpg

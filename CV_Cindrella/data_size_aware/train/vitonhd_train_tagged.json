@@ -1,0 +1,173 @@
+{
+  "S_M.jpg": [
+    {
+      "file_name": "S_M.jpg",
+      "tag_info": [
+        {
+          "tag_name": "item",
+          "tag_category": "shirt"
+        },
+        {
+          "tag_name": "sleeveLength",
+          "tag_category": "short sleeve"
+        },
+        {
+          "tag_name": "neckLine",
+          "tag_category": "round neck"
+        }
+      ]
+    }
+  ],
+  "L_M.jpg": [
+    {
+      "file_name": "L_M.jpg",
+      "tag_info": [
+        {
+          "tag_name": "item",
+          "tag_category": "shirt"
+        },
+        {
+          "tag_name": "sleeveLength",
+          "tag_category": "short sleeve"
+        },
+        {
+          "tag_name": "neckLine",
+          "tag_category": "round neck"
+        }
+      ]
+    }
+  ],
+  "S_S.jpg": [
+    {
+      "file_name": "S_S.jpg",
+      "tag_info": [
+        {
+          "tag_name": "item",
+          "tag_category": "shirt"
+        },
+        {
+          "tag_name": "sleeveLength",
+          "tag_category": "short sleeve"
+        },
+        {
+          "tag_name": "neckLine",
+          "tag_category": "round neck"
+        }
+      ]
+    }
+  ],
+  "M_M.jpg": [
+    {
+      "file_name": "M_M.jpg",
+      "tag_info": [
+        {
+          "tag_name": "item",
+          "tag_category": "shirt"
+        },
+        {
+          "tag_name": "sleeveLength",
+          "tag_category": "short sleeve"
+        },
+        {
+          "tag_name": "neckLine",
+          "tag_category": "round neck"
+        }
+      ]
+    }
+  ],
+  "S_L.jpg": [
+    {
+      "file_name": "S_L.jpg",
+      "tag_info": [
+        {
+          "tag_name": "item",
+          "tag_category": "shirt"
+        },
+        {
+          "tag_name": "sleeveLength",
+          "tag_category": "short sleeve"
+        },
+        {
+          "tag_name": "neckLine",
+          "tag_category": "round neck"
+        }
+      ]
+    }
+  ],
+  "M_S.jpg": [
+    {
+      "file_name": "M_S.jpg",
+      "tag_info": [
+        {
+          "tag_name": "item",
+          "tag_category": "shirt"
+        },
+        {
+          "tag_name": "sleeveLength",
+          "tag_category": "short sleeve"
+        },
+        {
+          "tag_name": "neckLine",
+          "tag_category": "round neck"
+        }
+      ]
+    }
+  ],
+  "L_L.jpg": [
+    {
+      "file_name": "L_L.jpg",
+      "tag_info": [
+        {
+          "tag_name": "item",
+          "tag_category": "shirt"
+        },
+        {
+          "tag_name": "sleeveLength",
+          "tag_category": "short sleeve"
+        },
+        {
+          "tag_name": "neckLine",
+          "tag_category": "round neck"
+        }
+      ]
+    }
+  ],
+  "M_L.jpg": [
+    {
+      "file_name": "M_L.jpg",
+      "tag_info": [
+        {
+          "tag_name": "item",
+          "tag_category": "shirt"
+        },
+        {
+          "tag_name": "sleeveLength",
+          "tag_category": "short sleeve"
+        },
+        {
+          "tag_name": "neckLine",
+          "tag_category": "round neck"
+        }
+      ]
+    }
+  ],
+  "L_S.jpg": [
+    {
+      "file_name": "L_S.jpg",
+      "tag_info": [
+        {
+          "tag_name": "item",
+          "tag_category": "shirt"
+        },
+        {
+          "tag_name": "sleeveLength",
+          "tag_category": "short sleeve"
+        },
+        {
+          "tag_name": "neckLine",
+          "tag_category": "round neck"
+        }
+      ]
+    }
+  ]
+}

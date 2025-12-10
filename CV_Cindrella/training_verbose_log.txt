@@ -1,0 +1,707 @@
+================================================================================
+SIZE-AWARE VTON: Small Training with Verbose Logging
+================================================================================
+
+Configuration:
+  Data Directory: /scratch/bds9746/datasets/VITON-HD
+  Output Directory: ./results/small_train_test
+  Batch Size: 2
+  Epochs: 3
+  Subset Size: 100 samples
+
+Device: cuda
+GPU: NVIDIA H100 80GB HBM3
+GPU Memory: 84.94 GB
+
+Loading dataset...
+✅ Dataset loaded: 100 samples (subset of 11647)
+
+Initializing size-aware modules...
+✅ Size Encoder: 266,752 parameters
+✅ Size Controller: 3,683,072 parameters
+
+================================================================================
+STARTING TRAINING
+================================================================================
+
+
+################################################################################
+EPOCH 1/3
+################################################################################
+
+Epoch 1:   0%|          | 0/50 [00:00<?, ?it/s]Epoch 1:   0%|          | 0/50 [00:00<?, ?it/s, avg_width_ratio=1.205, batch_labels=fitted/oversized]Epoch 1:   2%|▏         | 1/50 [00:00<00:22,  2.13it/s, avg_width_ratio=1.205, batch_labels=fitted/oversized]Epoch 1:   2%|▏         | 1/50 [00:00<00:22,  2.13it/s, avg_width_ratio=1.948, batch_labels=oversized/oversized]Epoch 1:   2%|▏         | 1/50 [00:00<00:22,  2.13it/s, avg_width_ratio=2.052, batch_labels=oversized/oversized]Epoch 1:   6%|▌         | 3/50 [00:00<00:09,  5.12it/s, avg_width_ratio=2.052, batch_labels=oversized/oversized]Epoch 1:   6%|▌         | 3/50 [00:00<00:09,  5.12it/s, avg_width_ratio=1.485, batch_labels=oversized/oversized]Epoch 1:   8%|▊         | 4/50 [00:00<00:08,  5.18it/s, avg_width_ratio=1.485, batch_labels=oversized/oversized]Epoch 1:   8%|▊         | 4/50 [00:00<00:08,  5.18it/s, avg_width_ratio=2.689, batch_labels=oversized/oversized]Epoch 1:   8%|▊         | 4/50 [00:01<00:08,  5.18it/s, avg_width_ratio=2.205, batch_labels=oversized/oversized]Epoch 1:  12%|█▏        | 6/50 [00:01<00:07,  5.67it/s, avg_width_ratio=2.205, batch_labels=oversized/oversized]Epoch 1:  12%|█▏        | 6/50 [00:01<00:07,  5.67it/s, avg_width_ratio=1.558, batch_labels=loose/oversized]    Epoch 1:  12%|█▏        | 6/50 [00:01<00:07,  5.67it/s, avg_width_ratio=1.997, batch_labels=oversized/loose]Epoch 1:  16%|█▌        | 8/50 [00:01<00:06,  6.69it/s, avg_width_ratio=1.997, batch_labels=oversized/loose]Epoch 1:  16%|█▌        | 8/50 [00:01<00:06,  6.69it/s, avg_width_ratio=1.801, batch_labels=oversized/oversized]Epoch 1:  16%|█▌        | 8/50 [00:01<00:06,  6.69it/s, avg_width_ratio=1.438, batch_labels=oversized/oversized]Epoch 1:  20%|██        | 10/50 [00:01<00:06,  6.40it/s, avg_width_ratio=1.438, batch_labels=oversized/oversized]Epoch 1:  20%|██        | 10/50 [00:01<00:06,  6.40it/s, avg_width_ratio=1.968, batch_labels=oversized/oversized]Epoch 1:  20%|██        | 10/50 [00:01<00:06,  6.40it/s, avg_width_ratio=1.894, batch_labels=oversized/oversized]Epoch 1:  24%|██▍       | 12/50 [00:01<00:04,  7.92it/s, avg_width_ratio=1.894, batch_labels=oversized/oversized]Epoch 1:  24%|██▍       | 12/50 [00:01<00:04,  7.92it/s, avg_width_ratio=1.549, batch_labels=oversized/oversized]Epoch 1:  24%|██▍       | 12/50 [00:02<00:04,  7.92it/s, avg_width_ratio=2.050, batch_labels=oversized/oversized]Epoch 1:  28%|██▊       | 14/50 [00:02<00:04,  7.27it/s, avg_width_ratio=2.050, batch_labels=oversized/oversized]Epoch 1:  28%|██▊       | 14/50 [00:02<00:04,  7.27it/s, avg_width_ratio=1.998, batch_labels=oversized/oversized]Epoch 1:  28%|██▊       | 14/50 [00:02<00:04,  7.27it/s, avg_width_ratio=1.765, batch_labels=loose/oversized]    Epoch 1:  32%|███▏      | 16/50 [00:02<00:04,  7.12it/s, avg_width_ratio=1.765, batch_labels=loose/oversized]Epoch 1:  32%|███▏      | 16/50 [00:02<00:04,  7.12it/s, avg_width_ratio=2.248, batch_labels=oversized/oversized]Epoch 1:  32%|███▏      | 16/50 [00:02<00:04,  7.12it/s, avg_width_ratio=1.729, batch_labels=oversized/oversized]Epoch 1:  36%|███▌      | 18/50 [00:02<00:04,  7.40it/s, avg_width_ratio=1.729, batch_labels=oversized/oversized]Epoch 1:  36%|███▌      | 18/50 [00:02<00:04,  7.40it/s, avg_width_ratio=1.292, batch_labels=oversized/fitted]   Epoch 1:  36%|███▌      | 18/50 [00:02<00:04,  7.40it/s, avg_width_ratio=2.109, batch_labels=oversized/oversized]Epoch 1:  40%|████      | 20/50 [00:02<00:04,  7.48it/s, avg_width_ratio=2.109, batch_labels=oversized/oversized]Epoch 1:  40%|████      | 20/50 [00:03<00:04,  7.48it/s, avg_width_ratio=1.879, batch_labels=oversized/loose]    Epoch 1:  42%|████▏     | 21/50 [00:03<00:03,  7.32it/s, avg_width_ratio=1.879, batch_labels=oversized/loose]Epoch 1:  42%|████▏     | 21/50 [00:03<00:03,  7.32it/s, avg_width_ratio=2.003, batch_labels=oversized/oversized]Epoch 1:  42%|████▏     | 21/50 [00:03<00:03,  7.32it/s, avg_width_ratio=2.311, batch_labels=oversized/oversized]Epoch 1:  46%|████▌     | 23/50 [00:03<00:03,  7.41it/s, avg_width_ratio=2.311, batch_labels=oversized/oversized]Epoch 1:  46%|████▌     | 23/50 [00:03<00:03,  7.41it/s, avg_width_ratio=1.712, batch_labels=oversized/fitted]   Epoch 1:  46%|████▌     | 23/50 [00:03<00:03,  7.41it/s, avg_width_ratio=1.719, batch_labels=oversized/oversized]Epoch 1:  50%|█████     | 25/50 [00:03<00:03,  7.70it/s, avg_width_ratio=1.719, batch_labels=oversized/oversized]Epoch 1:  50%|█████     | 25/50 [00:03<00:03,  7.70it/s, avg_width_ratio=1.692, batch_labels=oversized/oversized]Epoch 1:  52%|█████▏    | 26/50 [00:03<00:03,  7.33it/s, avg_width_ratio=1.692, batch_labels=oversized/oversized]Epoch 1:  52%|█████▏    | 26/50 [00:03<00:03,  7.33it/s, avg_width_ratio=1.300, batch_labels=tight/oversized]    Epoch 1:  52%|█████▏    | 26/50 [00:04<00:03,  7.33it/s, avg_width_ratio=1.852, batch_labels=loose/oversized]Epoch 1:  56%|█████▌    | 28/50 [00:04<00:03,  7.07it/s, avg_width_ratio=1.852, batch_labels=loose/oversized]Epoch 1:  56%|█████▌    | 28/50 [00:04<00:03,  7.07it/s, avg_width_ratio=1.377, batch_labels=loose/oversized]Epoch 1:  56%|█████▌    | 28/50 [00:04<00:03,  7.07it/s, avg_width_ratio=1.572, batch_labels=oversized/loose]Epoch 1:  60%|██████    | 30/50 [00:04<00:02,  6.93it/s, avg_width_ratio=1.572, batch_labels=oversized/loose]Epoch 1:  60%|██████    | 30/50 [00:04<00:02,  6.93it/s, avg_width_ratio=2.114, batch_labels=oversized/oversized]Epoch 1:  60%|██████    | 30/50 [00:04<00:02,  6.93it/s, avg_width_ratio=1.898, batch_labels=oversized/oversized]Epoch 1:  64%|██████▍   | 32/50 [00:04<00:02,  8.16it/s, avg_width_ratio=1.898, batch_labels=oversized/oversized]Epoch 1:  64%|██████▍   | 32/50 [00:04<00:02,  8.16it/s, avg_width_ratio=1.130, batch_labels=fitted/loose]       Epoch 1:  66%|██████▌   | 33/50 [00:04<00:02,  8.21it/s, avg_width_ratio=1.130, batch_labels=fitted/loose]Epoch 1:  66%|██████▌   | 33/50 [00:04<00:02,  8.21it/s, avg_width_ratio=1.393, batch_labels=oversized/fitted]Epoch 1:  68%|██████▊   | 34/50 [00:04<00:02,  7.94it/s, avg_width_ratio=1.393, batch_labels=oversized/fitted]Epoch 1:  68%|██████▊   | 34/50 [00:04<00:02,  7.94it/s, avg_width_ratio=1.973, batch_labels=oversized/oversized]Epoch 1:  70%|███████   | 35/50 [00:04<00:01,  7.64it/s, avg_width_ratio=1.973, batch_labels=oversized/oversized]Epoch 1:  70%|███████   | 35/50 [00:05<00:01,  7.64it/s, avg_width_ratio=1.577, batch_labels=oversized/loose]    Epoch 1:  72%|███████▏  | 36/50 [00:05<00:01,  7.23it/s, avg_width_ratio=1.577, batch_labels=oversized/loose]Epoch 1:  72%|███████▏  | 36/50 [00:05<00:01,  7.23it/s, avg_width_ratio=1.760, batch_labels=oversized/oversized]Epoch 1:  74%|███████▍  | 37/50 [00:05<00:02,  6.45it/s, avg_width_ratio=1.760, batch_labels=oversized/oversized]Epoch 1:  74%|███████▍  | 37/50 [00:05<00:02,  6.45it/s, avg_width_ratio=1.596, batch_labels=oversized/loose]    Epoch 1:  74%|███████▍  | 37/50 [00:05<00:02,  6.45it/s, avg_width_ratio=2.012, batch_labels=oversized/oversized]Epoch 1:  78%|███████▊  | 39/50 [00:05<00:01,  7.65it/s, avg_width_ratio=2.012, batch_labels=oversized/oversized]Epoch 1:  78%|███████▊  | 39/50 [00:05<00:01,  7.65it/s, avg_width_ratio=2.157, batch_labels=oversized/oversized]Epoch 1:  80%|████████  | 40/50 [00:05<00:01,  7.40it/s, avg_width_ratio=2.157, batch_labels=oversized/oversized]Epoch 1:  80%|████████  | 40/50 [00:05<00:01,  7.40it/s, avg_width_ratio=1.775, batch_labels=oversized/oversized]Epoch 1:  82%|████████▏ | 41/50 [00:05<00:01,  7.26it/s, avg_width_ratio=1.775, batch_labels=oversized/oversized]Epoch 1:  82%|████████▏ | 41/50 [00:06<00:01,  7.26it/s, avg_width_ratio=1.212, batch_labels=oversized/tight]    Epoch 1:  84%|████████▍ | 42/50 [00:06<00:01,  6.73it/s, avg_width_ratio=1.212, batch_labels=oversized/tight]Epoch 1:  84%|████████▍ | 42/50 [00:06<00:01,  6.73it/s, avg_width_ratio=1.388, batch_labels=oversized/loose]Epoch 1:  84%|████████▍ | 42/50 [00:06<00:01,  6.73it/s, avg_width_ratio=1.964, batch_labels=oversized/oversized]Epoch 1:  88%|████████▊ | 44/50 [00:06<00:00,  6.71it/s, avg_width_ratio=1.964, batch_labels=oversized/oversized]Epoch 1:  88%|████████▊ | 44/50 [00:06<00:00,  6.71it/s, avg_width_ratio=1.160, batch_labels=tight/oversized]    Epoch 1:  88%|████████▊ | 44/50 [00:06<00:00,  6.71it/s, avg_width_ratio=2.118, batch_labels=oversized/oversized]Epoch 1:  92%|█████████▏| 46/50 [00:06<00:00,  6.77it/s, avg_width_ratio=2.118, batch_labels=oversized/oversized]Epoch 1:  92%|█████████▏| 46/50 [00:06<00:00,  6.77it/s, avg_width_ratio=1.912, batch_labels=oversized/oversized]Epoch 1:  92%|█████████▏| 46/50 [00:06<00:00,  6.77it/s, avg_width_ratio=1.398, batch_labels=loose/oversized]    Epoch 1:  96%|█████████▌| 48/50 [00:06<00:00,  7.48it/s, avg_width_ratio=1.398, batch_labels=loose/oversized]Epoch 1:  96%|█████████▌| 48/50 [00:06<00:00,  7.48it/s, avg_width_ratio=1.732, batch_labels=oversized/loose]Epoch 1:  96%|█████████▌| 48/50 [00:07<00:00,  7.48it/s, avg_width_ratio=1.679, batch_labels=oversized/oversized]Epoch 1: 100%|██████████| 50/50 [00:07<00:00,  7.50it/s, avg_width_ratio=1.679, batch_labels=oversized/oversized]Epoch 1: 100%|██████████| 50/50 [00:07<00:00,  7.03it/s, avg_width_ratio=1.679, batch_labels=oversized/oversized]
+
+================================================================================
+BATCH 1 - Step 1
+================================================================================
+
+============================================================
+Sample #0: 04959_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    0.9821
+  Length Ratio:   1.0157
+  Shoulder Ratio: 0.6595
+  → Size Label: 'fitted' (ID: 1)
+  Classification: FITTED (garment matches body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 0.3300
+  Range: [0.3300, 0.3300]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 2 - Step 2
+================================================================================
+
+============================================================
+Sample #2: 09669_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    2.3126
+  Length Ratio:   1.5774
+  Shoulder Ratio: 2.0095
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 11 - Step 11
+================================================================================
+
+============================================================
+Sample #20: 01600_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    1.7307
+  Length Ratio:   1.0009
+  Shoulder Ratio: 1.6579
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 21 - Step 21
+================================================================================
+
+============================================================
+Sample #40: 07032_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    2.6552
+  Length Ratio:   1.4054
+  Shoulder Ratio: 2.1293
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 31 - Step 31
+================================================================================
+
+============================================================
+Sample #60: 00318_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    2.2795
+  Length Ratio:   1.6709
+  Shoulder Ratio: 2.0868
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 41 - Step 41
+================================================================================
+
+============================================================
+Sample #80: 11772_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    1.7948
+  Length Ratio:   0.8444
+  Shoulder Ratio: 1.5075
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+EPOCH 1 SUMMARY
+================================================================================
+
+Size Distribution in this epoch:
+  fitted    :   5 samples (  5.0%)
+  loose     :  13 samples ( 13.0%)
+  oversized :  79 samples ( 79.0%)
+  tight     :   3 samples (  3.0%)
+
+
+################################################################################
+EPOCH 2/3
+################################################################################
+
+Epoch 2:   0%|          | 0/50 [00:00<?, ?it/s]Epoch 2:   0%|          | 0/50 [00:00<?, ?it/s, avg_width_ratio=1.785, batch_labels=oversized/oversized]Epoch 2:   2%|▏         | 1/50 [00:00<00:18,  2.59it/s, avg_width_ratio=1.785, batch_labels=oversized/oversized]Epoch 2:   2%|▏         | 1/50 [00:00<00:18,  2.59it/s, avg_width_ratio=1.873, batch_labels=oversized/oversized]Epoch 2:   2%|▏         | 1/50 [00:00<00:18,  2.59it/s, avg_width_ratio=1.806, batch_labels=oversized/oversized]Epoch 2:   6%|▌         | 3/50 [00:00<00:09,  4.94it/s, avg_width_ratio=1.806, batch_labels=oversized/oversized]Epoch 2:   6%|▌         | 3/50 [00:00<00:09,  4.94it/s, avg_width_ratio=1.983, batch_labels=oversized/oversized]Epoch 2:   6%|▌         | 3/50 [00:00<00:09,  4.94it/s, avg_width_ratio=1.704, batch_labels=oversized/oversized]Epoch 2:  10%|█         | 5/50 [00:00<00:06,  7.21it/s, avg_width_ratio=1.704, batch_labels=oversized/oversized]Epoch 2:  10%|█         | 5/50 [00:00<00:06,  7.21it/s, avg_width_ratio=2.016, batch_labels=oversized/oversized]Epoch 2:  10%|█         | 5/50 [00:01<00:06,  7.21it/s, avg_width_ratio=1.619, batch_labels=oversized/oversized]Epoch 2:  14%|█▍        | 7/50 [00:01<00:05,  8.14it/s, avg_width_ratio=1.619, batch_labels=oversized/oversized]Epoch 2:  14%|█▍        | 7/50 [00:01<00:05,  8.14it/s, avg_width_ratio=2.250, batch_labels=oversized/oversized]Epoch 2:  14%|█▍        | 7/50 [00:01<00:05,  8.14it/s, avg_width_ratio=1.997, batch_labels=oversized/oversized]Epoch 2:  18%|█▊        | 9/50 [00:01<00:04, 10.02it/s, avg_width_ratio=1.997, batch_labels=oversized/oversized]Epoch 2:  18%|█▊        | 9/50 [00:01<00:04, 10.02it/s, avg_width_ratio=2.411, batch_labels=oversized/oversized]Epoch 2:  18%|█▊        | 9/50 [00:01<00:04, 10.02it/s, avg_width_ratio=1.888, batch_labels=oversized/oversized]Epoch 2:  22%|██▏       | 11/50 [00:01<00:04,  9.65it/s, avg_width_ratio=1.888, batch_labels=oversized/oversized]Epoch 2:  22%|██▏       | 11/50 [00:01<00:04,  9.65it/s, avg_width_ratio=1.494, batch_labels=loose/oversized]    Epoch 2:  22%|██▏       | 11/50 [00:01<00:04,  9.65it/s, avg_width_ratio=1.409, batch_labels=loose/oversized]Epoch 2:  26%|██▌       | 13/50 [00:01<00:03,  9.55it/s, avg_width_ratio=1.409, batch_labels=loose/oversized]Epoch 2:  26%|██▌       | 13/50 [00:01<00:03,  9.55it/s, avg_width_ratio=1.065, batch_labels=fitted/loose]   Epoch 2:  26%|██▌       | 13/50 [00:01<00:03,  9.55it/s, avg_width_ratio=1.518, batch_labels=oversized/loose]Epoch 2:  30%|███       | 15/50 [00:01<00:03,  9.23it/s, avg_width_ratio=1.518, batch_labels=oversized/loose]Epoch 2:  30%|███       | 15/50 [00:01<00:03,  9.23it/s, avg_width_ratio=1.367, batch_labels=oversized/oversized]Epoch 2:  32%|███▏      | 16/50 [00:01<00:04,  8.50it/s, avg_width_ratio=1.367, batch_labels=oversized/oversized]Epoch 2:  32%|███▏      | 16/50 [00:01<00:04,  8.50it/s, avg_width_ratio=1.708, batch_labels=oversized/loose]    Epoch 2:  32%|███▏      | 16/50 [00:02<00:04,  8.50it/s, avg_width_ratio=1.949, batch_labels=oversized/oversized]Epoch 2:  36%|███▌      | 18/50 [00:02<00:03,  8.46it/s, avg_width_ratio=1.949, batch_labels=oversized/oversized]Epoch 2:  36%|███▌      | 18/50 [00:02<00:03,  8.46it/s, avg_width_ratio=2.021, batch_labels=oversized/oversized]Epoch 2:  36%|███▌      | 18/50 [00:02<00:03,  8.46it/s, avg_width_ratio=1.403, batch_labels=loose/oversized]    Epoch 2:  40%|████      | 20/50 [00:02<00:03,  9.10it/s, avg_width_ratio=1.403, batch_labels=loose/oversized]Epoch 2:  40%|████      | 20/50 [00:02<00:03,  9.10it/s, avg_width_ratio=2.347, batch_labels=oversized/oversized]Epoch 2:  40%|████      | 20/50 [00:02<00:03,  9.10it/s, avg_width_ratio=2.886, batch_labels=oversized/oversized]Epoch 2:  44%|████▍     | 22/50 [00:02<00:03,  9.33it/s, avg_width_ratio=2.886, batch_labels=oversized/oversized]Epoch 2:  44%|████▍     | 22/50 [00:02<00:03,  9.33it/s, avg_width_ratio=1.453, batch_labels=oversized/oversized]Epoch 2:  44%|████▍     | 22/50 [00:02<00:03,  9.33it/s, avg_width_ratio=1.799, batch_labels=oversized/oversized]Epoch 2:  48%|████▊     | 24/50 [00:02<00:02,  8.75it/s, avg_width_ratio=1.799, batch_labels=oversized/oversized]Epoch 2:  48%|████▊     | 24/50 [00:02<00:02,  8.75it/s, avg_width_ratio=2.292, batch_labels=oversized/oversized]Epoch 2:  48%|████▊     | 24/50 [00:03<00:02,  8.75it/s, avg_width_ratio=1.871, batch_labels=oversized/oversized]Epoch 2:  52%|█████▏    | 26/50 [00:03<00:02,  8.70it/s, avg_width_ratio=1.871, batch_labels=oversized/oversized]Epoch 2:  52%|█████▏    | 26/50 [00:03<00:02,  8.70it/s, avg_width_ratio=0.980, batch_labels=tight/loose]        Epoch 2:  52%|█████▏    | 26/50 [00:03<00:02,  8.70it/s, avg_width_ratio=2.363, batch_labels=oversized/oversized]Epoch 2:  56%|█████▌    | 28/50 [00:03<00:02,  8.53it/s, avg_width_ratio=2.363, batch_labels=oversized/oversized]Epoch 2:  56%|█████▌    | 28/50 [00:03<00:02,  8.53it/s, avg_width_ratio=1.806, batch_labels=oversized/oversized]Epoch 2:  56%|█████▌    | 28/50 [00:03<00:02,  8.53it/s, avg_width_ratio=2.004, batch_labels=oversized/oversized]Epoch 2:  60%|██████    | 30/50 [00:03<00:02,  8.03it/s, avg_width_ratio=2.004, batch_labels=oversized/oversized]Epoch 2:  60%|██████    | 30/50 [00:03<00:02,  8.03it/s, avg_width_ratio=1.637, batch_labels=oversized/oversized]Epoch 2:  60%|██████    | 30/50 [00:03<00:02,  8.03it/s, avg_width_ratio=1.775, batch_labels=oversized/oversized]Epoch 2:  64%|██████▍   | 32/50 [00:03<00:02,  8.01it/s, avg_width_ratio=1.775, batch_labels=oversized/oversized]Epoch 2:  64%|██████▍   | 32/50 [00:03<00:02,  8.01it/s, avg_width_ratio=1.221, batch_labels=oversized/fitted]   Epoch 2:  64%|██████▍   | 32/50 [00:04<00:02,  8.01it/s, avg_width_ratio=1.956, batch_labels=oversized/oversized]Epoch 2:  68%|██████▊   | 34/50 [00:04<00:02,  7.95it/s, avg_width_ratio=1.956, batch_labels=oversized/oversized]Epoch 2:  68%|██████▊   | 34/50 [00:04<00:02,  7.95it/s, avg_width_ratio=1.452, batch_labels=loose/oversized]    Epoch 2:  68%|██████▊   | 34/50 [00:04<00:02,  7.95it/s, avg_width_ratio=1.510, batch_labels=oversized/oversized]Epoch 2:  72%|███████▏  | 36/50 [00:04<00:01,  8.36it/s, avg_width_ratio=1.510, batch_labels=oversized/oversized]Epoch 2:  72%|███████▏  | 36/50 [00:04<00:01,  8.36it/s, avg_width_ratio=1.643, batch_labels=fitted/oversized]   Epoch 2:  72%|███████▏  | 36/50 [00:04<00:01,  8.36it/s, avg_width_ratio=1.399, batch_labels=oversized/loose] Epoch 2:  76%|███████▌  | 38/50 [00:04<00:01,  8.21it/s, avg_width_ratio=1.399, batch_labels=oversized/loose]Epoch 2:  76%|███████▌  | 38/50 [00:04<00:01,  8.21it/s, avg_width_ratio=1.393, batch_labels=loose/oversized]Epoch 2:  76%|███████▌  | 38/50 [00:04<00:01,  8.21it/s, avg_width_ratio=1.057, batch_labels=fitted/loose]   Epoch 2:  80%|████████  | 40/50 [00:04<00:01,  8.53it/s, avg_width_ratio=1.057, batch_labels=fitted/loose]Epoch 2:  80%|████████  | 40/50 [00:04<00:01,  8.53it/s, avg_width_ratio=1.780, batch_labels=oversized/loose]Epoch 2:  80%|████████  | 40/50 [00:04<00:01,  8.53it/s, avg_width_ratio=1.261, batch_labels=fitted/oversized]Epoch 2:  84%|████████▍ | 42/50 [00:04<00:00,  9.09it/s, avg_width_ratio=1.261, batch_labels=fitted/oversized]Epoch 2:  84%|████████▍ | 42/50 [00:05<00:00,  9.09it/s, avg_width_ratio=1.065, batch_labels=oversized/tight] Epoch 2:  84%|████████▍ | 42/50 [00:05<00:00,  9.09it/s, avg_width_ratio=1.788, batch_labels=oversized/oversized]Epoch 2:  88%|████████▊ | 44/50 [00:05<00:00,  8.24it/s, avg_width_ratio=1.788, batch_labels=oversized/oversized]Epoch 2:  88%|████████▊ | 44/50 [00:05<00:00,  8.24it/s, avg_width_ratio=1.826, batch_labels=loose/oversized]    Epoch 2:  88%|████████▊ | 44/50 [00:05<00:00,  8.24it/s, avg_width_ratio=1.773, batch_labels=oversized/oversized]Epoch 2:  92%|█████████▏| 46/50 [00:05<00:00,  8.10it/s, avg_width_ratio=1.773, batch_labels=oversized/oversized]Epoch 2:  92%|█████████▏| 46/50 [00:05<00:00,  8.10it/s, avg_width_ratio=1.829, batch_labels=fitted/oversized]   Epoch 2:  92%|█████████▏| 46/50 [00:05<00:00,  8.10it/s, avg_width_ratio=1.845, batch_labels=oversized/oversized]Epoch 2:  96%|█████████▌| 48/50 [00:05<00:00,  8.16it/s, avg_width_ratio=1.845, batch_labels=oversized/oversized]Epoch 2:  96%|█████████▌| 48/50 [00:05<00:00,  8.16it/s, avg_width_ratio=2.063, batch_labels=oversized/oversized]Epoch 2:  96%|█████████▌| 48/50 [00:06<00:00,  8.16it/s, avg_width_ratio=1.908, batch_labels=loose/oversized]    Epoch 2: 100%|██████████| 50/50 [00:06<00:00,  7.58it/s, avg_width_ratio=1.908, batch_labels=loose/oversized]Epoch 2: 100%|██████████| 50/50 [00:06<00:00,  8.14it/s, avg_width_ratio=1.908, batch_labels=loose/oversized]
+
+================================================================================
+BATCH 1 - Step 51
+================================================================================
+
+============================================================
+Sample #0: 13886_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    1.9755
+  Length Ratio:   1.5587
+  Shoulder Ratio: 1.3522
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 2 - Step 52
+================================================================================
+
+============================================================
+Sample #2: 11490_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    1.3803
+  Length Ratio:   1.1232
+  Shoulder Ratio: 1.2616
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 11 - Step 61
+================================================================================
+
+============================================================
+Sample #20: 00704_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    2.0479
+  Length Ratio:   1.7459
+  Shoulder Ratio: 1.8275
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 21 - Step 71
+================================================================================
+
+============================================================
+Sample #40: 07174_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    2.1882
+  Length Ratio:   1.7959
+  Shoulder Ratio: 1.7982
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 31 - Step 81
+================================================================================
+
+============================================================
+Sample #60: 10295_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    1.9286
+  Length Ratio:   1.5674
+  Shoulder Ratio: 1.8689
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 41 - Step 91
+================================================================================
+
+============================================================
+Sample #80: 03423_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    2.2938
+  Length Ratio:   1.7782
+  Shoulder Ratio: 1.6837
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+EPOCH 2 SUMMARY
+================================================================================
+
+Size Distribution in this epoch:
+  fitted    :   6 samples (  6.0%)
+  loose     :  14 samples ( 14.0%)
+  oversized :  78 samples ( 78.0%)
+  tight     :   2 samples (  2.0%)
+
+
+################################################################################
+EPOCH 3/3
+################################################################################
+
+Epoch 3:   0%|          | 0/50 [00:00<?, ?it/s]Epoch 3:   0%|          | 0/50 [00:00<?, ?it/s, avg_width_ratio=1.300, batch_labels=oversized/loose]Epoch 3:   2%|▏         | 1/50 [00:00<00:17,  2.80it/s, avg_width_ratio=1.300, batch_labels=oversized/loose]Epoch 3:   2%|▏         | 1/50 [00:00<00:17,  2.80it/s, avg_width_ratio=1.785, batch_labels=oversized/oversized]Epoch 3:   2%|▏         | 1/50 [00:00<00:17,  2.80it/s, avg_width_ratio=1.478, batch_labels=fitted/oversized]   Epoch 3:   6%|▌         | 3/50 [00:00<00:07,  6.17it/s, avg_width_ratio=1.478, batch_labels=fitted/oversized]Epoch 3:   6%|▌         | 3/50 [00:00<00:07,  6.17it/s, avg_width_ratio=1.357, batch_labels=oversized/tight] Epoch 3:   6%|▌         | 3/50 [00:00<00:07,  6.17it/s, avg_width_ratio=1.714, batch_labels=oversized/oversized]Epoch 3:  10%|█         | 5/50 [00:00<00:05,  7.96it/s, avg_width_ratio=1.714, batch_labels=oversized/oversized]Epoch 3:  10%|█         | 5/50 [00:00<00:05,  7.96it/s, avg_width_ratio=2.214, batch_labels=oversized/oversized]Epoch 3:  10%|█         | 5/50 [00:00<00:05,  7.96it/s, avg_width_ratio=1.917, batch_labels=oversized/oversized]Epoch 3:  14%|█▍        | 7/50 [00:00<00:04,  9.47it/s, avg_width_ratio=1.917, batch_labels=oversized/oversized]Epoch 3:  14%|█▍        | 7/50 [00:00<00:04,  9.47it/s, avg_width_ratio=1.764, batch_labels=oversized/loose]    Epoch 3:  14%|█▍        | 7/50 [00:01<00:04,  9.47it/s, avg_width_ratio=1.473, batch_labels=oversized/oversized]Epoch 3:  18%|█▊        | 9/50 [00:01<00:03, 10.76it/s, avg_width_ratio=1.473, batch_labels=oversized/oversized]Epoch 3:  18%|█▊        | 9/50 [00:01<00:03, 10.76it/s, avg_width_ratio=1.660, batch_labels=oversized/oversized]Epoch 3:  18%|█▊        | 9/50 [00:01<00:03, 10.76it/s, avg_width_ratio=2.046, batch_labels=oversized/oversized]Epoch 3:  22%|██▏       | 11/50 [00:01<00:03, 10.84it/s, avg_width_ratio=2.046, batch_labels=oversized/oversized]Epoch 3:  22%|██▏       | 11/50 [00:01<00:03, 10.84it/s, avg_width_ratio=1.772, batch_labels=oversized/loose]    Epoch 3:  22%|██▏       | 11/50 [00:01<00:03, 10.84it/s, avg_width_ratio=1.387, batch_labels=oversized/oversized]Epoch 3:  26%|██▌       | 13/50 [00:01<00:03,  9.58it/s, avg_width_ratio=1.387, batch_labels=oversized/oversized]Epoch 3:  26%|██▌       | 13/50 [00:01<00:03,  9.58it/s, avg_width_ratio=1.696, batch_labels=oversized/oversized]Epoch 3:  26%|██▌       | 13/50 [00:01<00:03,  9.58it/s, avg_width_ratio=0.988, batch_labels=fitted/tight]       Epoch 3:  30%|███       | 15/50 [00:01<00:03,  9.54it/s, avg_width_ratio=0.988, batch_labels=fitted/tight]Epoch 3:  30%|███       | 15/50 [00:01<00:03,  9.54it/s, avg_width_ratio=1.520, batch_labels=oversized/fitted]Epoch 3:  30%|███       | 15/50 [00:01<00:03,  9.54it/s, avg_width_ratio=1.556, batch_labels=oversized/oversized]Epoch 3:  34%|███▍      | 17/50 [00:01<00:03,  9.70it/s, avg_width_ratio=1.556, batch_labels=oversized/oversized]Epoch 3:  34%|███▍      | 17/50 [00:02<00:03,  9.70it/s, avg_width_ratio=1.954, batch_labels=oversized/oversized]Epoch 3:  34%|███▍      | 17/50 [00:02<00:03,  9.70it/s, avg_width_ratio=2.003, batch_labels=oversized/oversized]Epoch 3:  38%|███▊      | 19/50 [00:02<00:03,  9.60it/s, avg_width_ratio=2.003, batch_labels=oversized/oversized]Epoch 3:  38%|███▊      | 19/50 [00:02<00:03,  9.60it/s, avg_width_ratio=1.570, batch_labels=oversized/loose]    Epoch 3:  40%|████      | 20/50 [00:02<00:03,  7.81it/s, avg_width_ratio=1.570, batch_labels=oversized/loose]Epoch 3:  40%|████      | 20/50 [00:02<00:03,  7.81it/s, avg_width_ratio=1.541, batch_labels=loose/oversized]Epoch 3:  40%|████      | 20/50 [00:02<00:03,  7.81it/s, avg_width_ratio=2.908, batch_labels=oversized/oversized]Epoch 3:  44%|████▍     | 22/50 [00:02<00:03,  8.43it/s, avg_width_ratio=2.908, batch_labels=oversized/oversized]Epoch 3:  44%|████▍     | 22/50 [00:02<00:03,  8.43it/s, avg_width_ratio=1.584, batch_labels=oversized/oversized]Epoch 3:  44%|████▍     | 22/50 [00:02<00:03,  8.43it/s, avg_width_ratio=1.766, batch_labels=oversized/oversized]Epoch 3:  48%|████▊     | 24/50 [00:02<00:03,  8.29it/s, avg_width_ratio=1.766, batch_labels=oversized/oversized]Epoch 3:  48%|████▊     | 24/50 [00:02<00:03,  8.29it/s, avg_width_ratio=1.941, batch_labels=oversized/oversized]Epoch 3:  48%|████▊     | 24/50 [00:02<00:03,  8.29it/s, avg_width_ratio=1.700, batch_labels=oversized/loose]    Epoch 3:  52%|█████▏    | 26/50 [00:02<00:02,  8.66it/s, avg_width_ratio=1.700, batch_labels=oversized/loose]Epoch 3:  52%|█████▏    | 26/50 [00:02<00:02,  8.66it/s, avg_width_ratio=1.539, batch_labels=oversized/oversized]Epoch 3:  52%|█████▏    | 26/50 [00:03<00:02,  8.66it/s, avg_width_ratio=1.805, batch_labels=loose/oversized]    Epoch 3:  56%|█████▌    | 28/50 [00:03<00:02,  8.90it/s, avg_width_ratio=1.805, batch_labels=loose/oversized]Epoch 3:  56%|█████▌    | 28/50 [00:03<00:02,  8.90it/s, avg_width_ratio=1.640, batch_labels=oversized/oversized]Epoch 3:  56%|█████▌    | 28/50 [00:03<00:02,  8.90it/s, avg_width_ratio=1.618, batch_labels=oversized/oversized]Epoch 3:  60%|██████    | 30/50 [00:03<00:02,  8.29it/s, avg_width_ratio=1.618, batch_labels=oversized/oversized]Epoch 3:  60%|██████    | 30/50 [00:03<00:02,  8.29it/s, avg_width_ratio=1.859, batch_labels=oversized/oversized]Epoch 3:  60%|██████    | 30/50 [00:03<00:02,  8.29it/s, avg_width_ratio=1.831, batch_labels=oversized/oversized]Epoch 3:  64%|██████▍   | 32/50 [00:03<00:02,  8.76it/s, avg_width_ratio=1.831, batch_labels=oversized/oversized]Epoch 3:  64%|██████▍   | 32/50 [00:03<00:02,  8.76it/s, avg_width_ratio=2.008, batch_labels=oversized/oversized]Epoch 3:  64%|██████▍   | 32/50 [00:03<00:02,  8.76it/s, avg_width_ratio=1.530, batch_labels=oversized/oversized]Epoch 3:  68%|██████▊   | 34/50 [00:03<00:01,  8.30it/s, avg_width_ratio=1.530, batch_labels=oversized/oversized]Epoch 3:  68%|██████▊   | 34/50 [00:03<00:01,  8.30it/s, avg_width_ratio=2.226, batch_labels=oversized/oversized]Epoch 3:  68%|██████▊   | 34/50 [00:04<00:01,  8.30it/s, avg_width_ratio=1.708, batch_labels=oversized/oversized]Epoch 3:  72%|███████▏  | 36/50 [00:04<00:01,  8.41it/s, avg_width_ratio=1.708, batch_labels=oversized/oversized]Epoch 3:  72%|███████▏  | 36/50 [00:04<00:01,  8.41it/s, avg_width_ratio=1.125, batch_labels=tight/oversized]    Epoch 3:  72%|███████▏  | 36/50 [00:04<00:01,  8.41it/s, avg_width_ratio=1.895, batch_labels=oversized/oversized]Epoch 3:  76%|███████▌  | 38/50 [00:04<00:01,  8.34it/s, avg_width_ratio=1.895, batch_labels=oversized/oversized]Epoch 3:  76%|███████▌  | 38/50 [00:04<00:01,  8.34it/s, avg_width_ratio=2.060, batch_labels=oversized/oversized]Epoch 3:  76%|███████▌  | 38/50 [00:04<00:01,  8.34it/s, avg_width_ratio=1.306, batch_labels=oversized/fitted]   Epoch 3:  80%|████████  | 40/50 [00:04<00:01,  8.37it/s, avg_width_ratio=1.306, batch_labels=oversized/fitted]Epoch 3:  80%|████████  | 40/50 [00:04<00:01,  8.37it/s, avg_width_ratio=2.326, batch_labels=oversized/oversized]Epoch 3:  80%|████████  | 40/50 [00:04<00:01,  8.37it/s, avg_width_ratio=1.256, batch_labels=oversized/fitted]   Epoch 3:  84%|████████▍ | 42/50 [00:04<00:00,  9.07it/s, avg_width_ratio=1.256, batch_labels=oversized/fitted]Epoch 3:  84%|████████▍ | 42/50 [00:04<00:00,  9.07it/s, avg_width_ratio=2.506, batch_labels=oversized/oversized]Epoch 3:  84%|████████▍ | 42/50 [00:05<00:00,  9.07it/s, avg_width_ratio=2.020, batch_labels=oversized/oversized]Epoch 3:  88%|████████▊ | 44/50 [00:05<00:00,  9.27it/s, avg_width_ratio=2.020, batch_labels=oversized/oversized]Epoch 3:  88%|████████▊ | 44/50 [00:05<00:00,  9.27it/s, avg_width_ratio=1.340, batch_labels=oversized/loose]    Epoch 3:  88%|████████▊ | 44/50 [00:05<00:00,  9.27it/s, avg_width_ratio=1.608, batch_labels=oversized/oversized]Epoch 3:  92%|█████████▏| 46/50 [00:05<00:00,  9.24it/s, avg_width_ratio=1.608, batch_labels=oversized/oversized]Epoch 3:  92%|█████████▏| 46/50 [00:05<00:00,  9.24it/s, avg_width_ratio=1.724, batch_labels=oversized/loose]    Epoch 3:  92%|█████████▏| 46/50 [00:05<00:00,  9.24it/s, avg_width_ratio=1.591, batch_labels=oversized/oversized]Epoch 3:  96%|█████████▌| 48/50 [00:05<00:00, 10.21it/s, avg_width_ratio=1.591, batch_labels=oversized/oversized]Epoch 3:  96%|█████████▌| 48/50 [00:05<00:00, 10.21it/s, avg_width_ratio=2.412, batch_labels=oversized/oversized]Epoch 3:  96%|█████████▌| 48/50 [00:05<00:00, 10.21it/s, avg_width_ratio=2.994, batch_labels=oversized/oversized]Epoch 3: 100%|██████████| 50/50 [00:05<00:00, 10.40it/s, avg_width_ratio=2.994, batch_labels=oversized/oversized]Epoch 3: 100%|██████████| 50/50 [00:05<00:00,  8.86it/s, avg_width_ratio=2.994, batch_labels=oversized/oversized]
+
+================================================================================
+BATCH 1 - Step 101
+================================================================================
+
+============================================================
+Sample #0: 06848_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    1.4136
+  Length Ratio:   1.1480
+  Shoulder Ratio: 1.1969
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 2 - Step 102
+================================================================================
+
+============================================================
+Sample #2: 08282_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    2.0838
+  Length Ratio:   1.6097
+  Shoulder Ratio: 1.7657
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 11 - Step 111
+================================================================================
+
+============================================================
+Sample #20: 01125_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    2.3153
+  Length Ratio:   1.0289
+  Shoulder Ratio: 2.2861
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 21 - Step 121
+================================================================================
+
+============================================================
+Sample #40: 05895_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    1.2799
+  Length Ratio:   0.7923
+  Shoulder Ratio: 1.1640
+  → Size Label: 'loose' (ID: 2)
+  Classification: LOOSE (garment larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 0.6600
+  Range: [0.6600, 0.6600]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 31 - Step 131
+================================================================================
+
+============================================================
+Sample #60: 01600_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    1.9905
+  Length Ratio:   1.1512
+  Shoulder Ratio: 1.9068
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+BATCH 41 - Step 141
+================================================================================
+
+============================================================
+Sample #80: 10521_00.jpg
+============================================================
+
+📏 SIZE CALCULATIONS:
+  Width Ratio:    2.8556
+  Length Ratio:   1.4709
+  Shoulder Ratio: 1.3204
+  → Size Label: 'oversized' (ID: 3)
+  Classification: OVERSIZED (garment much larger than body)
+
+🗺️  SIZE MAP:
+  Shape: (1, 128, 96)
+  Mean Value: 1.0000
+  Range: [1.0000, 1.0000]
+
+📦 DATA SHAPES:
+  Person Image: (3, 512, 384)
+  Garment (CLIP): (1, 3, 224, 224)
+  Garment (Pure): (3, 1024, 768)
+  Pose Image: (3, 1024, 768)
+  Inpaint Mask: (1, 512, 384)
+
+💬 CAPTIONS:
+  Person: "model is wearing long_sleeve round_neck upper_body "
+  Garment: "a photo of long_sleeve round_neck upper_body "
+  Annotation: "long_sleeve round_neck upper_body "
+============================================================
+
+
+================================================================================
+EPOCH 3 SUMMARY
+================================================================================
+
+Size Distribution in this epoch:
+  fitted    :   5 samples (  5.0%)
+  loose     :   9 samples (  9.0%)
+  oversized :  83 samples ( 83.0%)
+  tight     :   3 samples (  3.0%)
+
+
+================================================================================
+TRAINING COMPLETE!
+================================================================================
+
+Total Steps: 150
+Epochs Completed: 3
+Samples Processed: 100 × 3 = 300
+
+📊 SIZE CALCULATION SUMMARY:
+  • Size ratios computed automatically from OpenPose + masks
+  • Size augmentation (0.7-1.5× scaling) creates diversity
+  • No manual size labeling needed!
+
+📝 For your data team:
+  See DATA_PREPROCESSING_GUIDE.md for full details
+
+================================================================================

@@ -1,0 +1,94 @@
+{
+  "annotations": [
+    {
+      "id": "S_M",
+      "image": "S_M.jpg",
+      "cloth": "tshirt.jpg",
+      "body_size": "small",
+      "body_size_code": "S",
+      "cloth_size": "medium",
+      "cloth_size_code": "M",
+      "original_file": "small-medium.png"
+    },
+    {
+      "id": "L_M",
+      "image": "L_M.jpg",
+      "cloth": "tshirt.jpg",
+      "body_size": "large",
+      "body_size_code": "L",
+      "cloth_size": "medium",
+      "cloth_size_code": "M",
+      "original_file": "large-medium.png"
+    },
+    {
+      "id": "S_S",
+      "image": "S_S.jpg",
+      "cloth": "tshirt.jpg",
+      "body_size": "small",
+      "body_size_code": "S",
+      "cloth_size": "small",
+      "cloth_size_code": "S",
+      "original_file": "small-small.png"
+    },
+    {
+      "id": "M_M",
+      "image": "M_M.jpg",
+      "cloth": "tshirt.jpg",
+      "body_size": "medium",
+      "body_size_code": "M",
+      "cloth_size": "medium",
+      "cloth_size_code": "M",
+      "original_file": "medium-medium.png"
+    },
+    {
+      "id": "S_L",
+      "image": "S_L.jpg",
+      "cloth": "tshirt.jpg",
+      "body_size": "small",
+      "body_size_code": "S",
+      "cloth_size": "large",
+      "cloth_size_code": "L",
+      "original_file": "small-large.png"
+    },
+    {
+      "id": "M_S",
+      "image": "M_S.jpg",
+      "cloth": "tshirt.jpg",
+      "body_size": "medium",
+      "body_size_code": "M",
+      "cloth_size": "small",
+      "cloth_size_code": "S",
+      "original_file": "medium-small.png"
+    },
+    {
+      "id": "L_L",
+      "image": "L_L.jpg",
+      "cloth": "tshirt.jpg",
+      "body_size": "large",
+      "body_size_code": "L",
+      "cloth_size": "large",
+      "cloth_size_code": "L",
+      "original_file": "large-large.png"
+    },
+    {
+      "id": "M_L",
+      "image": "M_L.jpg",
+      "cloth": "tshirt.jpg",
+      "body_size": "medium",
+      "body_size_code": "M",
+      "cloth_size": "large",
+      "cloth_size_code": "L",
+      "original_file": "medium-large.png"
+    },
+    {
+      "id": "L_S",
+      "image": "L_S.jpg",
+      "cloth": "tshirt.jpg",
+      "body_size": "large",
+      "body_size_code": "L",
+      "cloth_size": "small",
+      "cloth_size_code": "S",
+      "original_file": "large-small.png"
+    }
+  ]
+}
